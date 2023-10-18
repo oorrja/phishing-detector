@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Phishing Detector</title>
+</head>
+<body>
+    <h1>Email Phishing Detector</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+        <label for="message">Enter Email Message:</label>
+        <textarea name="message" id="message" rows="4" cols="50" required></textarea>
+        <br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
